@@ -90,7 +90,6 @@
             "php-http/discovery": true
         },
         "platform": {
-            "php": "8.2.0",
             "ext-gd": "2.0"
         }
     },
