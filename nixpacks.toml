@@ -10,9 +10,8 @@ nixPkgs = [
 ]
 
 [phases.install]
-cmds = [
-    'composer install --ignore-platform-reqs --no-scripts --no-interaction'
-]
+# Esta línea es la clave: ignora los requisitos de plataforma para que GD no detenga el proceso
+cmds = ['composer install --ignore-platform-reqs --no-interaction --no-scripts']
 
 [phases.build]
 cmds = [
